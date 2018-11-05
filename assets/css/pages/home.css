@@ -1,7 +1,5 @@
 @import '../layout/base.css';
-@import '../components/nav.css';
 @import '../components/carousel.css';
-
 
 /* Bloco de estética */
 .estetica {
@@ -79,4 +77,36 @@
     display: flex;
     margin: 50px auto;
     flex-direction: column;
+}
+
+.servicos h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1c1817;
+}
+
+.servicos .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.servicos .items .item {
+    width: 32%;
+}
+
+.servicos .items .item h3 {
+    margin: 7px 0;
+    font-size: 19px;
+}
+
+.servicos .items .item p {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.servicos .btn {
+    width: 30%;
+    margin-top: 40px;
+    align-self: center;
 }

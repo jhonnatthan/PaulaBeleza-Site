@@ -1,0 +1,70 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1817;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .container div{
+    margin: 30px 0;
+    padding: 0 10px;
+    width: 32%;
+}
+
+footer .container div:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+footer .container .info img {
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+
+footer .container .navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 10px 20px;
+}
+
+footer .container .navigation a {
+    display: inline-flex;
+    color: white;
+    text-transform: uppercase;
+    min-width: 50%;
+}
+
+footer .container .social {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .social a {
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+
+footer .container .social .icons {
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+    flex-direction: row;
+    width: 100%;
+}
+
+footer .container .social .icons a {
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}

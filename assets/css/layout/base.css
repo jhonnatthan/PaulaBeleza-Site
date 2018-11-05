@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+@import '../components/nav.css';
+@import '../blocks/footer.css';
+@import url('https://unpkg.com/leaflet@1.3.4/dist/leaflet.css');
 
 * {
     box-sizing: border-box;
@@ -30,14 +33,29 @@ header {
     display: inline-flex;
     text-decoration: none;
     color: white;
+    justify-content: center;
     padding: 10px 25px;
     border-radius: 7px;
     background-color: #1c1817;
 }
 
+.text-muted {
+    color: rgba(255,255,255,.6);
+}
+
 img {
     max-width: 100%;
     height: auto;
+}
+
+a:not(.btn) {
+    text-decoration: none;
+    opacity: .5;
+    transition: opacity 500ms;
+}
+
+a:not(.btn):hover {
+    opacity: 1;
 }
 
 .jumbotron .container {
@@ -74,4 +92,8 @@ img {
     .container {
         max-width: 1140px;
     }
+}
+
+#mapid {
+    height: 300px;
 }

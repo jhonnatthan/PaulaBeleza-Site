@@ -1,8 +1,7 @@
-loadComponents = (url, callback) => {
+loadComponents = (url, async, defer) => {
     let body = document.querySelector('body');
     let script = document.createElement('script');
 
-    script.setAttribute('async', true);
     script.src = url;
 
     body.appendChild(script);

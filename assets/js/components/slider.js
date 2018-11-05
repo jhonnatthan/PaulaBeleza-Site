@@ -17,7 +17,7 @@ initCarousel = () => {
     let navigation = document.querySelector('.carousel > .navigation');
 
     sliderItem.forEach((item, index) => {
-        
+
         item.addEventListener('touchstart', event => {
             touchstartX = event.changedTouches[0].screenX;
             touchstartY = event.changedTouches[0].screenY;
@@ -149,28 +149,32 @@ feedCarousel = () => {
     ];
 
     data.forEach(el => {
-        let container = document.createElement('div');
-        container.classList.add('item');
-        container.style.backgroundImage = `linear-gradient(to top, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0)), url('${el.image}')`;
-
-        let title = document.createElement('h2');
-        title.classList.add('slide-title');
-        title.appendChild(document.createTextNode(el.title));
-        container.appendChild(title);
-
-        let content = document.createElement('p');
-        content.classList.add('slide-content');
-        content.appendChild(document.createTextNode(el.content));
-        container.appendChild(content);
-
-        let button = document.createElement('a');
-        button.classList.add('btn', 'slide-button');
-        button.setAttribute('href', el.button.link);
-        button.appendChild(document.createTextNode(el.button.text));
-        container.appendChild(button);
-
-        sliderItems.appendChild(container);
+        addCarouselItem(el);
     });
+}
+
+addCarouselItem = (el) => {
+    let container = document.createElement('div');
+    container.classList.add('item');
+    container.style.backgroundImage = `linear-gradient(to top, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0)), url('${el.image}')`;
+
+    let title = document.createElement('h2');
+    title.classList.add('slide-title');
+    title.appendChild(document.createTextNode(el.title));
+    container.appendChild(title);
+
+    let content = document.createElement('p');
+    content.classList.add('slide-content');
+    content.appendChild(document.createTextNode(el.content));
+    container.appendChild(content);
+
+    let button = document.createElement('a');
+    button.classList.add('btn', 'slide-button');
+    button.setAttribute('href', el.button.link);
+    button.appendChild(document.createTextNode(el.button.text));
+    container.appendChild(button);
+
+    sliderItems.appendChild(container);
 }
 
 feedCarousel();
