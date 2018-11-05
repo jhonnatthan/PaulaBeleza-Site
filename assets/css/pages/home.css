@@ -1,0 +1,82 @@
+@import '../layout/base.css';
+@import '../components/nav.css';
+@import '../components/carousel.css';
+
+
+/* Bloco de estética */
+.estetica {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+.estetica h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1c1817;
+}
+
+.estetica .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.estetica .content .image {
+    width: 40%;
+}
+
+.estetica .content .text {
+    width: 60%;
+    padding: 0 15px;
+}
+
+.estetica .content .text h3 {
+    font-size: 21px;
+}
+
+.estetica .content .text p {
+    margin: 20px 0;
+}
+
+.estetica .content .text .btn {
+    width: fit-content;
+}
+
+/* Bloco da frase */
+
+.frase {
+    display: flex;
+    min-height: 400px;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.frase .author {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+
+/* Bloco de serviços */
+
+.servicos {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+}

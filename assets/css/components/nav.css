@@ -1,0 +1,18 @@
+.main-navbar {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.main-navbar li a {
+    display: inline-flex;
+    padding: 15px 20px;
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+    transition: opacity 700ms;
+}
+
+.main-navbar li a:hover {
+    opacity: 1;
+}
