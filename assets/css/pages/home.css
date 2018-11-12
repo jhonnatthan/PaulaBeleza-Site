@@ -16,18 +16,18 @@
 
 .estetica .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
 }
 
 .estetica .content .image {
-    width: 40%;
+    width: 100%;
 }
 
 .estetica .content .text {
-    width: 60%;
-    padding: 0 15px;
+    width: 100%;
+    padding: 0;
 }
 
 .estetica .content .text h3 {
@@ -87,12 +87,13 @@
 
 .servicos .items {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .servicos .items .item {
-    width: 32%;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .servicos .items .item h3 {
@@ -106,7 +107,33 @@
 }
 
 .servicos .btn {
-    width: 30%;
-    margin-top: 40px;
+    width: 100%;
+    margin-top: 10px;
     align-self: center;
+}
+
+@media (min-width: 768px) {
+    .estetica .content {
+        flex-direction: row;
+    }
+
+    .estetica .content .image {
+        width: 40%;
+    }
+    
+    .estetica .content .text {
+        width: 60%;
+        padding: 0 15px;
+    }
+
+    .servicos .items .item {
+        width: 32%;
+    }
+
+    .servicos .items {
+        flex-direction: row;
+    }
+    .servicos .btn {
+        width: 30%;
+    }
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
 @import '../components/nav.css';
 @import '../blocks/footer.css';
-@import url('https://unpkg.com/leaflet@1.3.4/dist/leaflet.css');
+
 
 * {
     box-sizing: border-box;
@@ -92,8 +92,4 @@ a:not(.btn):hover {
     .container {
         max-width: 1140px;
     }
-}
-
-#mapid {
-    height: 300px;
 }

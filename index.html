@@ -6,19 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Paula Beleza</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/pages/home.css" />
+    <link rel="stylesheet" href="./assets/css/pages/home.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="./assets/img/logo.png">
+        <a href="index.html"><img class="logo" src="./assets/img/logo.png"></a>
+        <a href="#" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <nav>
             <ul class="main-navbar">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SERVIÇOS</a></li>
-                <li><a href="#">PORTFÓLIO</a></li>
-                <li><a href="#">QUEM SOMOS</a></li>
-                <li><a href="#">CONTATO</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="portfolio.html">PORTFÓLIO</a></li>
+                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
             </ul>
         </nav>
     </header>
@@ -89,7 +94,7 @@
     </main>
 
     <footer>
-        <div id="mapid"></div>
+        <div id="map"></div>
         <div class="container">
             <div class="info">
                 <img src="./assets/img/logo.png">
@@ -116,18 +121,24 @@
     </footer>
     <script defer src="./assets/js/main.js"></script>
     <script defer src="./assets/js/home.js"></script>
-    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-        crossorigin=""></script>
     <script>
-        let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+        function initMap() {
+            var myLatLng = { lat: -23.958223, lng: -46.371056 };
 
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 18,
-            id: 'mapbox.streets',
-            accessToken: 'your.mapbox.access.token'
-        }).addTo(mymap);
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 18
+            });
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLng,
+                title: 'Hello World!'
+            });
+        }
+
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAuwbu2fcgdjQ89dpUqIzqNAnnPh8Sa_Ho&callback=initMap"></script>
 </body>
 
 </html>

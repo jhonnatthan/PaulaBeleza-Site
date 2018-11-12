@@ -7,20 +7,15 @@ footer {
 
 footer .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 footer .container div{
-    margin: 30px 0;
+    margin: 20px 0;
     padding: 0 10px;
-    width: 32%;
-}
-
-footer .container div:nth-child(2){
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    width: 100%;
 }
 
 footer .container .info img {
@@ -33,7 +28,7 @@ footer .container .navigation {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    padding: 10px 20px;
+    padding: 0 10px;
 }
 
 footer .container .navigation a {
@@ -41,6 +36,7 @@ footer .container .navigation a {
     color: white;
     text-transform: uppercase;
     min-width: 50%;
+    margin: 10px 0;
 }
 
 footer .container .social {
@@ -67,4 +63,30 @@ footer .container .social .icons a {
     width: 25px;
     height: 25px;
     margin-right: 10px;
+}
+
+footer #map {
+    height: 350px;
+}
+
+@media (min-width: 768px) {
+    footer .container {
+        flex-direction: row;
+    }
+
+    footer .container div {
+        width: 32%;
+    }
+
+    footer .container .navigation {
+        padding: 30px 20px; 
+    }
+
+    footer .container div:nth-child(2){
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+
 }

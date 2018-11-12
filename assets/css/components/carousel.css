@@ -17,17 +17,20 @@
 
 .carousel .navigation .navigation-item {
     display: flex;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     border: 1px solid #1c1817;
     border-radius: 50%;
     background-color: transparent;
+    align-items: center;
     margin: 0 2px;
     transition: all 200ms;
 }
 
 .carousel .navigation .navigation-item.active {
     background-color: #1c1817;
+    width: 15px;
+    height: 15px;
 }
 
 .carousel .navigation .navigation-item:hover {
@@ -67,7 +70,13 @@
 }
 
 .carousel .items .item .slide-content {
-    max-width: 30%;
+    max-width: 80%;
     text-align: center;
     margin: 20px 0;
+} 
+
+@media (min-width: 768px) {
+    .carousel .items .item .slide-content {
+        max-width: 30%;
+    }
 }
