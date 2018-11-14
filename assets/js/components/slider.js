@@ -156,7 +156,7 @@ feedCarousel = () => {
 addCarouselItem = (el) => {
     let container = document.createElement('div');
     container.classList.add('item');
-    container.style.backgroundImage = `linear-gradient(to top, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0)), url('${el.image}')`;
+    container.style.backgroundImage = `linear-gradient(to top, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), url('${el.image}')`;
 
     let title = document.createElement('h2');
     title.classList.add('slide-title');

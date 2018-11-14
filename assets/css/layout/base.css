@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
 @import '../components/nav.css';
 @import '../blocks/footer.css';
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,8 +23,14 @@ header {
     display: flex;
     width: auto;
     max-height: 160px;
-    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
     padding: 10px 0;
+    max-width: 85%;
+}
+
+.logo-link {
+    opacity: 1 !important;
 }
 
 .btn {
@@ -40,12 +44,13 @@ header {
 }
 
 .text-muted {
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, .6);
 }
 
 img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 a:not(.btn) {
@@ -77,6 +82,9 @@ a:not(.btn):hover {
 }
 
 @media (min-width: 768px) {
+    .logo {
+        margin-top: 50px;
+    }
     .container {
         max-width: 720px;
     }
@@ -88,7 +96,7 @@ a:not(.btn):hover {
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }

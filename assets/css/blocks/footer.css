@@ -19,7 +19,8 @@ footer .container div{
 }
 
 footer .container .info img {
-    max-width: 60%;
+    max-width: 90%;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
@@ -66,10 +67,15 @@ footer .container .social .icons a {
 }
 
 footer #map {
+    width: 100%;
     height: 350px;
 }
 
 @media (min-width: 768px) {
+    footer .container .info img {
+        max-width: 60%;
+    }
+
     footer .container {
         flex-direction: row;
     }

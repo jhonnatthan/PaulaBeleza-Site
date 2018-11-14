@@ -6,6 +6,7 @@
     display: flex;
     margin: 50px auto;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .estetica h2 {
@@ -16,7 +17,7 @@
 
 .estetica .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -51,7 +52,8 @@
     background-position: top;
     background-attachment: fixed;
     margin: 50px auto;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -77,6 +79,7 @@
     display: flex;
     margin: 50px auto;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .servicos h2 {
@@ -87,7 +90,8 @@
 
 .servicos .items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 

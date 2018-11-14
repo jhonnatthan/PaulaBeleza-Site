@@ -3,14 +3,20 @@
     flex-direction: column;
     list-style: none;
     color: white;
-    transition: all 500ms;
-    height: 0;
+    transition: opacity 500ms;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #1c1817;
+    z-index: 1;
     opacity: 0;
+    pointer-events: none;
 }
 
 .main-navbar.active {
-    height: auto;
     opacity: 1;
+    transition: none;
+    pointer-events: all;
 }
 
 .main-navbar li {
@@ -44,22 +50,22 @@
     margin: 4px 0;
     background-color: white;
     transition: all 500ms;
-} 
+}
 
 @media (min-width: 768px) {
     .main-navbar {
         height: auto;
         opacity: 1;
+        justify-content: center;
+        position: relative;
+        pointer-events: all;
     }
-
     .main-navbar {
         flex-direction: row;
     }
-
     .main-navbar li {
         display: inline-flex;
     }
-
     .menu-toggle {
         display: none;
     }

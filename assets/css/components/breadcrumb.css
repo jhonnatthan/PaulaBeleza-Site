@@ -1,0 +1,48 @@
+.breadcrumb {
+    display: flex;
+    position: relative;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-position: top;
+    background-size: cover;
+}
+
+.breadcrumb .path {
+    position: absolute;
+    right: 16px;
+    top: 30px;
+    text-align: right;
+}
+
+.breadcrumb .title {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .breadcrumb .path {
+        right: 50px;
+        top: 50px;
+    }
+    .breadcrumb .title::before {
+        content: '';
+        position: absolute;
+        left: -70%;
+        top: 50%;
+        width: 60%;
+        height: 2px;
+        background-color: white;
+    }
+    .breadcrumb .title::after {
+        content: '';
+        position: absolute;
+        right: -70%;
+        top: 50%;
+        width: 60%;
+        height: 2px;
+        background-color: white;
+    }
+}

@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Paula Beleza</title>
+    <title>Paula Beleza - Serviços</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/pages/home.css">
+    <link rel="stylesheet" href="./assets/css/pages/servicos.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="./assets/img/logo.png"></a>
+        <a class="logo-link" href="index.html"><img class="logo" src="./assets/img/logo.png"></a>
         <a href="#" class="menu-toggle">
             <span></span>
             <span></span>
@@ -29,11 +29,37 @@
     </header>
 
     <main>
+        <section class="breadcrumb" data-background="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0684e6eaef5592bad870a0028dbe2f74&auto=format&fit=crop&w=1050&q=80"></section>
+        <section class="servicos container">
+            <div class="servico">
+                <img src="https://images.unsplash.com/photo-1534778356534-d3d45b6df1da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1693ea8aa897cee4c80ac39f9662435f&auto=format&fit=crop&w=1050&q=80">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quisquam?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate commodi quasi! Deserunt,
+                    vero ipsa? Dolorum, officiis eius hic rem nam dolore inventore quam eveniet blanditiis cumque eaque
+                    quisquam rerum!</p>
+            </div>
 
+            <div class="servico">
+                <img src="https://images.unsplash.com/photo-1534778356534-d3d45b6df1da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1693ea8aa897cee4c80ac39f9662435f&auto=format&fit=crop&w=1050&q=80">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quisquam?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate commodi quasi! Deserunt,
+                    vero ipsa? Dolorum, officiis eius hic rem nam dolore inventore quam eveniet blanditiis cumque eaque
+                    quisquam rerum!</p>
+            </div>
+
+            <div class="servico">
+                <img src="https://images.unsplash.com/photo-1534778356534-d3d45b6df1da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1693ea8aa897cee4c80ac39f9662435f&auto=format&fit=crop&w=1050&q=80">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quisquam?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptate commodi quasi! Deserunt,
+                    vero ipsa? Dolorum, officiis eius hic rem nam dolore inventore quam eveniet blanditiis cumque eaque
+                    quisquam rerum!</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div id="map"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d911.5158574513246!2d-46.371617870783204!3d-23.958197073472576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1caf9e58cff1%3A0x22c015346352a98e!2sRua+S%C3%A3o+Jorge%2C+597+-+Vila+Voturu%C3%A1%2C+S%C3%A3o+Vicente+-+SP%2C+11380-310!5e0!3m2!1spt-BR!2sbr!4v1542197298900"
+            height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="container">
             <div class="info">
                 <img src="./assets/img/logo.png">
@@ -41,11 +67,11 @@
                 <p class="text-muted">São Vicente - SP</p>
             </div>
             <div class="navigation">
-                <a href="#">Home</a>
-                <a href="#">Serviços</a>
-                <a href="#">Portfólio</a>
-                <a href="#">Quem somos</a>
-                <a href="#">Contato</a>
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="quem-somos.html">Quem somos</a>
+                <a href="contato.html">Contato</a>
             </div>
             <div class="social">
                 <a href="mailto:contato@paulabeleza.com.br">contato@paulabeleza.com.br</a>
@@ -59,23 +85,5 @@
         </div>
     </footer>
     <script defer src="./assets/js/main.js"></script>
-    <script defer src="./assets/js/home.js"></script>
-    <script>
-        function initMap() {
-            var myLatLng = { lat: -23.958223, lng: -46.371056 };
-
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatLng,
-                zoom: 18
-            });
-
-            var marker = new google.maps.Marker({
-                map: map,
-                position: myLatLng,
-                title: 'Hello World!'
-            });
-        }
-
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAuwbu2fcgdjQ89dpUqIzqNAnnPh8Sa_Ho&callback=initMap"></script>
+    <script defer src="./assets/js/pages/servicos.js"></script>
 </body>
