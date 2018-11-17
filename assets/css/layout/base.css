@@ -62,7 +62,7 @@ img {
 
 a:not(.btn) {
     text-decoration: none;
-    color: black;
+    color: #ffffff !important;
     opacity: .5;
     transition: opacity 500ms;
 }

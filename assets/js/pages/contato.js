@@ -3,21 +3,24 @@ loadComponents('./assets/js/components/breadcrumb.js');
 
 let contactForm = document.querySelector('#frmContato');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
+contactForm.addEventListener('submit', e => {
     let formInputs = contactForm.querySelectorAll('input, textarea');
-    formInputs.forEach(el => el.setAttribute('disabled', true));
+    let formData = {};
+
+    formInputs.forEach(el => {
+        formData[el.getAttribute('name')] = el.value;
+        // el.setAttribute('disabled', true)
+    });
 
     let formSubmit = contactForm.querySelector('#frmEnviar');
     formSubmit.value = "Enviando dados...";
 
-    let formData = new FormData(contactForm);
     console.log(formData);
 
-    fetch('sistema/enviar.php')
+    fetch('./sistema/enviar.php', { method: 'POST', body: formData })
         .then(response => response.json())
         .then(data => console.log(data));
 
     formInputs.forEach(el => el.setAttribute('disabled', false));
+    e.preventDefault();
 });

@@ -1,5 +1,7 @@
 <?php
-    ini_set('display_errors', 0);
+
+    print_r($_POST);
+    /* ini_set('display_errors', 0);
     error_reporting(E_ALL);
 
     require_once('PHPMailer/PHPMailerAutoload.php');
@@ -33,8 +35,8 @@
                 "error" => $mail->ErrorInfo
             )
         );
-    }
+    } */
 
-    echo json_encode($_POST);
+    // echo json_encode($_POST);
 
 ?>
