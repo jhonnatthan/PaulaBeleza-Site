@@ -1,3 +1,10 @@
+nav {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 100%;
+}
+
 .main-navbar {
     display: flex;
     flex-direction: column;
@@ -39,7 +46,6 @@
     width: 50px;
     border: none;
     padding: 5px;
-    margin-bottom: 20px;
 }
 
 .menu-toggle span {
@@ -53,6 +59,12 @@
 }
 
 @media (min-width: 768px) {
+    nav {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: auto;
+    }
     .main-navbar {
         height: auto;
         opacity: 1;

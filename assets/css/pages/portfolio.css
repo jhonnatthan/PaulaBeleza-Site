@@ -1,2 +1,22 @@
 @import '../layout/base.css';
 @import '../components/breadcrumb.css';
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio .portfolio-item {
+        width: 32%;
+    }
+}

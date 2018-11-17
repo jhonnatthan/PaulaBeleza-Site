@@ -1,2 +1,80 @@
 @import '../layout/base.css';
 @import '../components/breadcrumb.css';
+.contato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contato .formulario {
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+.contato .formulario form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contato .formulario .formGroup {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contato .formulario .formGroup label {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contato .formulario .formGroup input,
+.contato .formulario .formGroup textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(28, 24, 23, 1);
+    border-radius: .25rem;
+}
+
+.contato .formulario .formGroup input:disabled,
+.contato .formulario .formGroup textarea:disabled {
+    background-color: #e9ecef;
+}
+
+.contato .formulario #frmEnviar {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.contato .infos {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.contato .infos .info {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .contato .formulario {
+        width: 60%;
+        border-bottom: none;
+    }
+    .contato .infos {
+        width: 38%;
+    }
+    .contato .formulario .nome,
+    .contato .formulario .email {
+        width: 48%;
+    }
+}
