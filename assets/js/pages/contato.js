@@ -9,18 +9,19 @@ contactForm.addEventListener('submit', e => {
 
     formInputs.forEach(el => {
         formData[el.getAttribute('name')] = el.value;
-        // el.setAttribute('disabled', true)
+        el.setAttribute('disabled', true)
     });
 
     let formSubmit = contactForm.querySelector('#frmEnviar');
     formSubmit.value = "Enviando dados...";
 
-    console.log(formData);
 
-    fetch('./sistema/enviar.php', { method: 'POST', body: formData })
-        .then(response => response.json())
-        .then(data => console.log(data));
+    setTimeout(() => {
+        console.log(formInputs);
+        formInputs.forEach(el => el.removeAttribute('disabled'));
+        formSubmit.value = "Enviar";
+        contactForm.reset();
+    }, 1000);
 
-    formInputs.forEach(el => el.setAttribute('disabled', false));
     e.preventDefault();
 });
