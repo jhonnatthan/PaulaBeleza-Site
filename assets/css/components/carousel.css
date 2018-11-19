@@ -65,8 +65,10 @@
 }
 
 .carousel .items .item .slide-title {
+    max-width: 80%;
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
 .carousel .items .item .slide-content {

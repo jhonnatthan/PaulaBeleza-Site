@@ -72,6 +72,11 @@
     margin-bottom: 20px;
 }
 
+.contato .infos .info p a {
+    color: #000 !important;
+    opacity: 1;
+}
+
 @media screen and (min-width: 768px) {
     .contato .formulario {
         width: 60%;

@@ -1,7 +1,7 @@
 @import '../layout/base.css';
 @import '../components/carousel.css';
-
 /* Bloco de estética */
+
 .estetica {
     display: flex;
     margin: 50px auto;
@@ -72,7 +72,6 @@
     line-height: 1;
 }
 
-
 /* Bloco de serviços */
 
 .servicos {
@@ -110,6 +109,10 @@
     font-size: 16px;
 }
 
+.servicos .items .item img {
+    height: 300px;
+}
+
 .servicos .btn {
     width: 100%;
     margin-top: 10px;
@@ -120,20 +123,16 @@
     .estetica .content {
         flex-direction: row;
     }
-
     .estetica .content .image {
         width: 40%;
     }
-    
     .estetica .content .text {
         width: 60%;
         padding: 0 15px;
     }
-
     .servicos .items .item {
         width: 32%;
     }
-
     .servicos .items {
         flex-direction: row;
     }

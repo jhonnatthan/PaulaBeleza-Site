@@ -21,24 +21,24 @@ initCarousel = () => {
         item.addEventListener('touchstart', event => {
             touchstartX = event.changedTouches[0].screenX;
             touchstartY = event.changedTouches[0].screenY;
-        }, false);
+        }, { passive: true });
 
         item.addEventListener('touchend', event => {
             touchendX = event.changedTouches[0].screenX;
             touchendY = event.changedTouches[0].screenY;
             changeSlide();
-        }, false);
+        }, { passive: true });
 
         item.addEventListener('mousedown', event => {
             touchstartX = event.screenX;
             touchstartY = event.screenY;
-        }, false);
+        }, { passive: true });
 
         item.addEventListener('mouseup', event => {
             touchendX = event.screenX;
             touchendY = event.screenY;
             changeSlide();
-        }, false);
+        }, { passive: true });
 
         let label = document.createElement('label');
         label.classList.add('navigation-item');
@@ -120,30 +120,12 @@ autoChangeSlide = () => {
 feedCarousel = () => {
     let data = [
         {
-            image: 'https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd3ea6907dc7de1927c420a37a9db02f&auto=format&fit=crop&w=1050&q=80',
-            title: 'Titulo Slider',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ad hic atque unde magnam saepe itaque voluptates ullam, ut quae?',
+            image: 'http://www.lafemmeinstitut.com.br/wp-content/uploads/2016/09/lafemme-institut.jpg',
+            title: 'Promoção corte de cabelo',
+            content: 'Aqui você tem promoção no corte de cabelo, confira nossos serviços',
             button: {
                 text: 'Acessar',
-                link: '#'
-            }
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1524860155154-c904628c418c?ixlib=rb-0.3.5&s=4c532f7696f9ad2a843c8b4c8d5f2b35&auto=format&fit=crop&w=1051&q=80',
-            title: 'Titulo Slider',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ad hic atque unde magnam saepe itaque voluptates ullam, ut quae?',
-            button: {
-                text: 'Acessar',
-                link: '#'
-            }
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd3ea6907dc7de1927c420a37a9db02f&auto=format&fit=crop&w=1050&q=80',
-            title: 'Titulo Slider',
-            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ad hic atque unde magnam saepe itaque voluptates ullam, ut quae?',
-            button: {
-                text: 'Acessar',
-                link: '#'
+                link: './servicos.html'
             }
         }
     ];
@@ -156,7 +138,7 @@ feedCarousel = () => {
 addCarouselItem = (el) => {
     let container = document.createElement('div');
     container.classList.add('item');
-    container.style.backgroundImage = `linear-gradient(to top, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), url('${el.image}')`;
+    container.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 0)), url('${el.image}')`;
 
     let title = document.createElement('h2');
     title.classList.add('slide-title');

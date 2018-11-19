@@ -15,6 +15,10 @@
     width: 100%;
 }
 
+.portfolio .portfolio-item img {
+    height: 300px;
+}
+
 @media screen and (min-width: 768px) {
     .portfolio .portfolio-item {
         width: 32%;
