@@ -120,9 +120,18 @@ autoChangeSlide = () => {
 feedCarousel = () => {
     let data = [
         {
-            image: 'http://www.lafemmeinstitut.com.br/wp-content/uploads/2016/09/lafemme-institut.jpg',
+            image: './assets/img/banner-home-1-min.jpg',
             title: 'Promoção corte de cabelo',
             content: 'Aqui você tem promoção no corte de cabelo, confira nossos serviços',
+            button: {
+                text: 'Acessar',
+                link: './servicos.html'
+            }
+        },
+        {
+            image: './assets/img/contato-banner.jfif',
+            title: 'Agende seu horário',
+            content: 'Faça o agendamento através do nosso formulário de contato',
             button: {
                 text: 'Acessar',
                 link: './servicos.html'
@@ -138,7 +147,7 @@ feedCarousel = () => {
 addCarouselItem = (el) => {
     let container = document.createElement('div');
     container.classList.add('item');
-    container.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 0)), url('${el.image}')`;
+    container.style.backgroundImage = `radial-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)), url('${el.image}')`;
 
     let title = document.createElement('h2');
     title.classList.add('slide-title');

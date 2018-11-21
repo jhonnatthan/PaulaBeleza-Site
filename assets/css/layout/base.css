@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
 @import '../components/nav.css';
 @import '../blocks/footer.css';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,7 +48,14 @@ main {
     justify-content: center;
     padding: 10px 25px;
     border-radius: 7px;
+    border: 2px solid #1c1817;
     background-color: #1c1817;
+    transition: all 500ms;
+}
+
+.btn:hover {
+    background: #3a3331;
+    border: 2px solid rgb(59, 53, 53);
 }
 
 .text-muted {
