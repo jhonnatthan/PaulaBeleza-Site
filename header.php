@@ -13,9 +13,9 @@
 <body>
     <div class="barra-auxiliar">
         <ul>
-            <li><a href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a></li>
-            <li><a href="#menu" accesskey="2">Início do Menu [Alt + 2]</a></li>
-            <li><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a></li>
+            <li><a href="#top"           alt="Link para o conteúdo principal" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a></li>
+            <li><a href="#menu"          alt="Link para o inicio do menu"     accesskey="2">Início do Menu [Alt + 2]</a></li>
+            <li><a href="#altocontraste" alt="Link para ativar alto contraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a></li>
         </ul>
     </div>
     <header>
@@ -29,11 +29,11 @@
         </a>
         <nav id="menu">
             <ul class="main-navbar">
-                <li><a title="Página Inicial" aria-label="Página Inicial" href="index.php">Home</a></li>
-                <li><a title="Página de Serviços" aria-label="Página de Serviços" href="servicos.php">Serviços</a></li>
-                <li><a title="Página de Portfólio" aria-label="Página de Portfólio" href="portfolio.php">Portfólio</a></li>
-                <li><a title="Página de Quem Somos" aria-label="Página de Quem Somos" href="quem-somos.php">Quem somos</a></li>
-                <li><a title="Página de Contato" aria-label="Página de Contato" href="contato.php">Contato</a></li>
+                <li><a title="Página Inicial"       alt="Link para a página inicial"     aria-label="Página Inicial" href="index.php">Home</a></li>
+                <li><a title="Página de Serviços"   alt="Link para a página de serviços" aria-label="Página de Serviços" href="servicos.php">Serviços</a></li>
+                <li><a title="Página de Portfólio"  alt="Link para a página de portfólio" aria-label="Página de Portfólio" href="portfolio.php">Portfólio</a></li>
+                <li><a title="Página de Quem Somos" alt="Link para a página de quem somos" aria-label="Página de Quem Somos" href="quem-somos.php">Quem somos</a></li>
+                <li><a title="Página de Contato"    alt="Link para a página de contato" aria-label="Página de Contato" href="contato.php">Contato</a></li>
             </ul>
         </nav>
     </header>

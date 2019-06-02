@@ -23,7 +23,7 @@
                     linha para garantir a satisfação e qualidade de nossos procedimentos. Conta com técnicas
                     atualizadas oferecendo uma lista completa de serviços de beleza, abrangendo o universo de
                     cabelos, manicure e pedicure, depilação entre outros serviços.</p>
-                <a title="Página de Quem Somos" aria-label="Página de Quem Somoss" href="./quem-somos.html" class="btn">Saiba
+                <a title="Página de Quem Somos" alt="link para a página quem somos" aria-label="Página de Quem Somoss" href="./quem-somos.html" class="btn">Saiba
                     mais</a>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 <p>Cera, Fio, Eletrólise, Luz Pulsada.</p>
             </div>
         </div>
-        <a title="Página de Serviços" aria-label="Página de Serviços" href="./servicos.html" class="btn">Saiba mais</a>
+        <a title="Página de Serviços" alt="link para a página serviços" aria-label="Página de Serviços" href="./servicos.html" class="btn">Saiba mais</a>
     </section>
 </main>
 <?php 

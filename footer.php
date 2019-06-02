@@ -8,11 +8,11 @@
                 <p class="text-muted">São Vicente - SP</p>
             </div>
             <div class="navigation">
-                <a title="Página Inicial" aria-label="Página Inicial" href="index.html">Home</a>
-                <a title="Página de Serviços" aria-label="Página de Serviços" href="servicos.html">Serviços</a>
-                <a title="Página de Portfólio" aria-label="Página de Portfólio" href="portfolio.html">Portfólio</a>
-                <a title="Página de Quem Somos" aria-label="Página de Quem Somos" href="quem-somos.html">Quem somos</a>
-                <a title="Página de Contato" aria-label="Página de Contato" href="contato.html">Contato</a>
+                <a title="Página Inicial"       alt="Link para página inicial" aria-label="Página Inicial" href="index.html">Home</a>
+                <a title="Página de Serviços"   alt="Link para página de serviços" aria-label="Página de Serviços" href="servicos.html">Serviços</a>
+                <a title="Página de Portfólio"  alt="Link para página de portfólio" aria-label="Página de Portfólio" href="portfolio.html">Portfólio</a>
+                <a title="Página de Quem Somos" alt="Link para página de quem somos" aria-label="Página de Quem Somos" href="quem-somos.html">Quem somos</a>
+                <a title="Página de Contato"    alt="Link para página de contato"aria-label="Página de Contato" href="contato.html">Contato</a>
             </div>
             <div class="social">
                 <a title="Link para envio de email" aria-label="Link para envio de email" href="mailto:contato@paulabeleza.com.br">contato@paulabeleza.com.br</a>

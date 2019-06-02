@@ -29,16 +29,16 @@
         <div class="infos" id="top">
             <div class="info">
                 <h3>Contato</h3>
-                <p><a title="Link para envio de email" aria-label="Link para envio de email" href="mailto:contato@paulabeleza.com.br">contato@paulabeleza.com.br</a></p>
+                <p><a title="Link para envio de email" alt="link para enviar e-mail" aria-label="Link para envio de email" href="mailto:contato@paulabeleza.com.br">contato@paulabeleza.com.br</a></p>
             </div>
             <div class="info">
                 <h3>Celular</h3>
-                <p><a title="Link para ligação" aria-label="Link para ligação" href="tel:+5513991851854">+55 13
+                <p><a title="Link para ligação" alt="link ligar para o salão" aria-label="Link para ligação" href="tel:+5513991851854">+55 13
                         99185-1854</a></p>
             </div>
             <div class="info">
                 <h3>Whataspp</h3>
-                <p><a title="Link para o WhatsApp" aria-label="Link para o WhatsApp" target="_blank" rel="noopener"
+                <p><a title="Link para o WhatsApp" alt="Link enviar mensagem via whatssap" aria-label="Link para o WhatsApp" target="_blank" rel="noopener"
                         href="https://wa.me/5513991851854">+55 13 99185-1854</a></p>
             </div>
             <div class="info">

@@ -27,6 +27,21 @@
     height: 300px;
 }
 
+table>caption {
+    background-color: #ccc; 
+    font-size: 1.4em;
+}
+
+table>tfoot {
+    background-color: #ccc; 
+    font-size: 1.4em; 
+}
+
+tbody>tr>td {
+    background-color: #eee;
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .servicos .servico{
         width: 48%;

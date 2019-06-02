@@ -23,6 +23,36 @@
             <p>Cera, Fio, Eletrólise, Luz Pulsada.</p>
         </div>
     </section>
+
+    <table class="container" summary="Tabela com os serviços prestados pelo estabelecimento junto de seus preços" boder="1">
+        <caption><h3>Serviços e Preços</h3></caption>
+            <thead>
+                <th>Hidratação Corte e Escova</th>
+                <th>Pés</th>
+                <th>Mãos</th>
+                <th>Depilação Básica (Pernas e Axila)</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Preço R$: 125,00</td>
+                    <td>Preço R$: 25,00</td>
+                    <td>Preço R$: 25,00</td>
+                    <td>Preço R$: 45,00</td>
+                </tr>
+                <tr>
+                    <td>Duração: 3 horas </td>
+                    <td>Duração: 1 hora </td>
+                    <td>Duração: 1 hora </td>
+                    <td>Duração: 45 minutos</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="6">Serviços e Preços</th>
+            </tr>
+            </tfoot>
+
+    </table>
 </main>
 <?php 
     $script = './assets/js/pages/servicos.js';
