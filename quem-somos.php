@@ -5,11 +5,13 @@
 <main>
     <section class="breadcrumb" data-background="./assets/img/quem-somos-banner.jfif"></section>
     <section class="quem-somos container" id="top">
+        
         <div class="image">
             <img alt="Imagem do salão" src="./assets/img/quem-somos.jfif">
         </div>
+
         <div class="content">
-            <h3>Seja bem vinda a Paula Beleza</h3>
+            <h1>Seja bem vinda a Paula Beleza</h1>
             <p>O salão traz excelência e confiança reconhecida por seus clientes, além de um espaço confortável
                 e aconchegante pensado especialmente para melhor recepcioná-los, unindo o melhor de um salão de
                 beleza e um centro estético. </p>

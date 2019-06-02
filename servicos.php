@@ -5,27 +5,34 @@
 <main>
     <section class="breadcrumb" data-background="./assets/img/servicos-banner.jfif"></section>
     <section class="servicos container" id="top">
+        <h1>Serviços</h1>
         <div class="servico">
             <img src="./assets/img/cabelos-min.jpg" alt="Mulher fazendo o cabelo">
-            <h3>Cabelos.</h3>
+            <p>Cabelos.</p>
             <p>Hidratação, Botox, Cauterização, Corte (Masculino, Feminino e Infantil)</p>
         </div>
 
         <div class="servico">
             <img src="./assets/img/pes-e-maos-min.jpg" alt="Mulher fazendo as unhas">
-            <h3>Pés e Mãos</h3>
+            
+            <p>Pés e Mãos</p>
+            
             <p>Manicure, Pedicure, Porcelana, Decorada, Alongamento em gel, Esmaltação em gel.</p>
+        
         </div>
 
         <div class="servico">
             <img src="./assets/img/depilacao-min.jpg" alt="Mulher fazendo depilação">
-            <h3>Depilação</h3>
+            
+            <p>Depilação</p>
+            
             <p>Cera, Fio, Eletrólise, Luz Pulsada.</p>
+        
         </div>
     </section>
 
     <table class="container" summary="Tabela com os serviços prestados pelo estabelecimento junto de seus preços" boder="1">
-        <caption><h3>Serviços e Preços</h3></caption>
+        <caption>Serviços e Preços</caption>
             <thead>
                 <th>Hidratação Corte e Escova</th>
                 <th>Pés</th>

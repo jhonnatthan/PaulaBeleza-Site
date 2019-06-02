@@ -9,13 +9,13 @@
     </section>
 
     <section class="estetica container" id="top">
-        <h2>O salão</h2>
+        <h1>O salão</h1>
         <div class="content">
             <div class="image">
                 <img alt="Imagem do salão" src="./assets/img/quem-somos.jfif">
             </div>
             <div class="text">
-                <h3>Seja bem vinda a Paula Beleza</h3>
+                <p>Seja bem vinda a Paula Beleza</p>
                 <p>O salão traz excelência e confiança reconhecida por seus clientes, além de um espaço confortável
                     e aconchegante pensado especialmente para melhor recepcioná-los, unindo o melhor de um salão de
                     beleza e um centro estético. </p>
@@ -38,21 +38,21 @@
     </section>
 
     <section class="servicos container">
-        <h2>Serviços</h2>
+        <p>Serviços</p>
         <div class="items">
             <div class="item">
                 <img src="./assets/img/cabelos-min.jpg" alt="Mulher fazendo o cabelo">
-                <h3>Cabelos.</h3>
+                <p>Cabelos.</p>
                 <p>Hidratação, Botox, Cauterização, Corte (Masculino, Feminino e Infantil)</p>
             </div>
             <div class="item">
                 <img src="./assets/img/pes-e-maos-min.jpg" alt="Mulher fazendo as unhas">
-                <h3>Pés e Mãos</h3>
+                <p>Pés e Mãos</p>
                 <p>Manicure, Pedicure, Porcelana, Decorada, Alongamento em gel, Esmaltação em gel.</p>
             </div>
             <div class="item">
                 <img src="./assets/img/depilacao-min.jpg" alt="Mulher fazendo depilação">
-                <h3>Depilação</h3>
+                <p>Depilação</p>
                 <p>Cera, Fio, Eletrólise, Luz Pulsada.</p>
             </div>
         </div>
